@@ -80,8 +80,9 @@ namespace pole_trojkata
 
             double o;
             o = ObwodTrojkata(a, b, c);
+            double s = o / 2;
             double p;
-            p = Math.Sqrt(o * (o - a) * (o - b) * (o - c));
+            p = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
             Console.WriteLine("Pole trojkata wynosi " + p);
         }
         static double ObliczKatAlpha(double a, double b, double c)
